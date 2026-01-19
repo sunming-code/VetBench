@@ -1,0 +1,11 @@
+{
+    "task_name": "RC-5: Subcategory Classification",
+    "prompts": {
+        "inference": {
+            "system_message": "You are an expert veterinary taxonomist. Your task is to classify the provided text into one of the following 10 veterinary sub-disciplines:\n\n1. Anatomy & Histology\n2. Physiology & Biochemistry\n3. Pathology & Pharmacology\n4. Microbiology & Immunology\n5. Parasitology\n6. Public Health\n7. Clinical Internal Medicine\n8. Veterinary Surgery\n9. Obstetrics & Andrology\n\nPlease strictly adhere to the following rules:\n1. Analyze the content of the text to determine its primary veterinary domain.\n2. Select exactly one category from the list above.\n3. **Format:** Output only the category name strictly as written above, with no additional text.",
+            "cot_trigger": "Think like a veterinary expert: identify the key medical concepts (e.g., organs, pathogens, drug mechanisms, surgical procedures) in the text, map them to the definition of each sub-discipline, and then select the best fit.",
+            "few_shot_setup": "[Insert k-shot Examples Here] (Each example demonstrates mapping a text segment to its correct sub-discipline.)",
+            "current_input": "Text:\n{veterinary_context}\n\nCategory:"
+        }
+    }
+}

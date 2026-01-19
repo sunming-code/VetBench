@@ -1,0 +1,11 @@
+{
+    "task_name": "SUM-1: Simple Summarization",
+    "prompts": {
+        "inference": {
+            "system_message": "You are an expert veterinary text reading assistant. Your task is to summarize the provided text concisely while including all key points.\n\nPlease strictly adhere to the following rules:\n1. **Scientific Rigor:** Maintain absolute fidelity to the source material; do not fabricate data or introduce external hallucinations.\n2. **Conciseness:** Condense the information efficiently while retaining key anatomical, pathological, or clinical details.\n3. **Format:** Output the summary directly without introductory filler.",
+            "cot_trigger": "Think like a veterinary researcher: first identify the core scientific logic and key entities in the text, then synthesize them into a summary.",
+            "few_shot_setup": "[Insert k-shot Examples Here]",
+            "current_input": "Source Material:\n{veterinary_context}\n\nSummary:"
+        }
+    }
+}

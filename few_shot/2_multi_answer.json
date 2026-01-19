@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Which of the following antimicrobial agents belong to the aminoglycoside class, characterized by concentration-dependent bactericidal activity and potential ototoxicity/nephrotoxicity?",
+        "options": {
+            "A": "Gentamicin",
+            "B": "Enrofloxacin",
+            "C": "Amikacin",
+            "D": "Doxycycline"
+        },
+        "answer": "AC"
+    },
+    {
+        "question": "Disseminated Intravascular Coagulation (DIC) is a complex hemostatic defect often secondary to severe systemic disease. Which laboratory findings are consistent with the overt (decompensated) consumptive phase of DIC?",
+        "options": {
+            "A": "Thrombocytopenia",
+            "B": "Prolonged Prothrombin Time (PT) and Activated Partial Thromboplastin Time (aPTT)",
+            "C": "Elevated Fibrin Degradation Products (FDPs) or D-dimers",
+            "D": "Presence of Schistocytes on blood smear"
+        },
+        "answer": "ABCD"
+    },
+    {
+        "question": "Listeria monocytogenes is a significant foodborne pathogen affecting ruminants and humans. Which characteristics accurately describe its microbiology and pathogenesis?",
+        "options": {
+            "A": "It is a psychrophilic bacterium capable of replication at 4°C",
+            "B": "It causes 'Circling Disease' (Meningoencephalitis) in cattle and sheep",
+            "C": "It is a Gram-negative enteric rod",
+            "D": "Outbreaks in livestock are frequently associated with the consumption of poor-quality, high-pH silage"
+        },
+        "answer": "ABD"
+    },
+    {
+        "question": "Regarding vector-borne diseases, which of the following pathogens are primarily transmitted by ticks of the genus Ixodes (e.g., Ixodes scapularis or Ixodes ricinus)?",
+        "options": {
+            "A": "Ehrlichia canis",
+            "B": "Borrelia burgdorferi (Lyme disease agent)",
+            "C": "Babesia vogeli",
+            "D": "Anaplasma phagocytophilum"
+        },
+        "answer": "BD"
+    },
+    {
+        "question": "In fracture fixation, an Intramedullary (IM) Pin is rarely used as a primary standalone fixation device because it fails to effectively neutralize certain mechanical forces. Which forces are NOT effectively neutralized by a smooth IM pin alone?",
+        "options": {
+            "A": "Bending forces",
+            "B": "Rotational (Torsional) forces",
+            "C": "Shear forces",
+            "D": "Axial compression (loading) forces"
+        },
+        "answer": "BCD"
+    },
+    {
+        "question": "According to the ACVIM consensus guidelines, which therapeutic agents are considered the standard-of-care 'Triple Therapy' for a dog diagnosed with Stage C Myxomatous Mitral Valve Disease (MMVD) exhibiting current signs of congestive heart failure?",
+        "options": {
+            "A": "Furosemide",
+            "B": "Pimobendan",
+            "C": "Angiotensin-Converting Enzyme (ACE) Inhibitor (e.g., Enalapril)",
+            "D": "Beta-blocker (e.g., Atenolol)"
+        },
+        "answer": "ABC"
+    },
+    {
+        "question": "Bovine Viral Diarrhea Virus (BVDV) can produce Persistently Infected (PI) calves, which are critical for herd transmission. Which statements correctly describe the PI phenomenon?",
+        "options": {
+            "A": "PI calves are generated when the dam is infected in the late gestation period (>150 days)",
+            "B": "PI calves are immunotolerant to the specific viral strain they carry and are persistently viremic",
+            "C": "PI calves are the primary reservoir for maintaining and spreading the virus within a herd",
+            "D": "All PI calves exhibit severe clinical signs ('Mucosal Disease') and die before weaning"
+        },
+        "answer": "BC"
+    },
+    {
+        "question": "Which statements accurately describe the pathogenesis and pathology of the Rabies virus (Lyssavirus)?",
+        "options": {
+            "A": "It is strictly neurotropic and travels via retrograde axoplasmic transport to the CNS",
+            "B": "Negri bodies are pathognomonic eosinophilic intracytoplasmic inclusion bodies found in neurons",
+            "C": "Viral shedding in saliva can occur days before the onset of overt clinical signs",
+            "D": "The virus causes a prolonged viremic phase allowing for detection via blood PCR during incubation"
+        },
+        "answer": "ABC"
+    }
+]

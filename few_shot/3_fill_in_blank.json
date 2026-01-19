@@ -1,0 +1,34 @@
+[
+    {
+        "question": "The suspension of the distal phalanx within the equine hoof capsule relies heavily on the extensive interdigitation of the epidermal and dermal ________, which significantly increases the surface area for attachment and weight-bearing.",
+        "answer": "laminae"
+    },
+    {
+        "question": "Feline susceptibility to acetaminophen toxicity is primarily due to a species-specific deficiency in the enzyme ________, which limits the cat's ability to conjugate the drug via the glucuronidation pathway.",
+        "answer": "glucuronyl transferase"
+    },
+    {
+        "question": "The virulence of Bacillus anthracis is dependent on two plasmids: pXO1, which encodes the tripartite toxin complex, and ________, which encodes the poly-D-glutamic acid capsule that inhibits phagocytosis.",
+        "answer": "pXO2"
+    },
+    {
+        "question": "In the life cycle of Dirofilaria immitis, the microfilariae taken up by a mosquito must develop into the infective ________ stage larvae before they can be transmitted to a new canine host during a blood meal.",
+        "answer": "L3"
+    },
+    {
+        "question": "In the Low-Dose Dexamethasone Suppression Test (LDDST) for canine hyperadrenocorticism, a pattern of cortisol suppression at 4 hours followed by an 'escape' to baseline levels at 8 hours is highly suggestive of ________ hyperadrenocorticism.",
+        "answer": "pituitary-dependent"
+    },
+    {
+        "question": "To achieve interfragmentary compression in fracture repair using a standard cortical screw, the surgeon must employ the ________ screw principle, which involves over-drilling the near cortex to create a gliding hole.",
+        "answer": "lag"
+    },
+    {
+        "question": "In cattle, the maternal recognition of pregnancy is signaled by the conceptus secreting ________, which inhibits the upregulation of oxytocin receptors on the endometrial epithelium, thereby preventing luteolysis.",
+        "answer": "interferon-tau"
+    },
+    {
+        "question": "Following inoculation into peripheral tissue, the Rabies virus travels from the neuromuscular junction to the central nervous system via fast ________ axoplasmic transport within motor neurons.",
+        "answer": "retrograde"
+    }
+]

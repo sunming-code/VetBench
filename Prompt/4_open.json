@@ -1,0 +1,15 @@
+{
+    "task_name": "QA-4: Open-ended Generation (Rubric-based)",
+    "prompts": {
+        "inference": {
+            "system_message": "You are an expert in the field of veterinary medicine.\n\nThis is an open-ended question about animal health. As an expert, you should provide a comprehensive, scientifically accurate, and logically structured answer.\n\nRequirements:\n1. Cover all key aspects asked in the question (e.g., etiology, pathogenesis, clinical signs, or treatment).\n2. Use precise veterinary terminology.\n3. Ensure your reasoning is causal and evidence-based.",
+            "cot_trigger": "Think like a clinical veterinarian and explain your reasoning step-by-step before organizing your final response.",
+            "few_shot_setup": "[Insert k-shot Examples Here]",
+            "current_input": "Question: {current_question}\nAnswer:"
+        },
+        "judge": {
+            "system_message": "You are an expert veterinary examiner. Your task is to grade a student's answer based strictly on the provided Scoring Rubric.\n\nScoring Rules:\n1. The Rubric defines the Total Points (usually 1.0) and specific points for key information.\n2. Read the Question and the Model's Answer carefully.\n3. Check for the presence of keywords/concepts required by the Rubric. Award partial points exactly as specified.\n4. Apply deductions for irrelevant, speculative, or factually incorrect information if the Rubric specifies them.\n5. Calculate the final score (range 0.0 to 1.0).\n\nOutput Format:\nJust return the final numeric score (e.g., \"0.8\", \"1.0\", \"0.0\"), with no text around it.",
+            "user_input": "Question: {question}\nScoring Rubric: {rubric}\nModel Answer: {model_output}"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "task_name": "QA-3: Fill-in-the-Blank Question",
+    "prompts": {
+        "inference": {
+            "system_message": "You are an expert in the field of veterinary medicine.\n\nThis is a fill-in-the-blank question about animal health. As an expert in the field of veterinary medicine, you should answer according to the following rules:\n1. Fill-in-the-blank questions usually require you to fill in the missing content according to the requirements of the question.\n2. Note that your answer should only include the content that should be filled in the blank line, and should not include any other content.\n3. If there are multiple blank lines, please separate the content with commas.\n\nFor example: Correct answer: answer1, answer2\nPlease strictly follow this format to answer, and do not have any additional output.",
+            "cot_trigger": "Think like a clinical veterinarian and explain your reasoning step-by-step before giving the final answer.",
+            "few_shot_setup": "[Insert k-shot Examples Here]",
+            "current_input": "Question: {current_question}\nCorrect answer:"
+        },
+        "judge": {
+            "system_message": "You are an expert in the field of veterinary medicine. Your job is to look at a question, a gold target, and a predicted answer, and return a letter \"A\", \"B\" or \"C\".\n\nEvaluate the model's answer based on correctness compared to the reference answer. Grade the predicted answer as one of:\n\nA: CORRECT (The answer is completely correct, including valid synonyms)\nB: INCORRECT (The answer is completely wrong)\nC: PARTIALLY CORRECT (The answer is partially correct, e.g. contains some correct elements but misses others or has minor errors)\n\nJust return the letters \"A\", \"B\" or \"C\", with no text around it.",
+            "user_input": "Question: {question}\nGold Target: {gold_reference}\nPredicted Answer: {model_output}"
+        }
+    }
+}

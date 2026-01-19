@@ -1,0 +1,34 @@
+[
+    {
+        "question": "Pathophysiologically explain the mechanism of 'Paradoxical Aciduria' in a ruminant with a displaced abomasum exhibiting severe hypochloremic metabolic alkalosis. Why does the kidney excrete protons despite the systemic alkalemia?",
+        "reference_answer": "The mechanism involves three key steps: 1. Hypovolemia stimulates the Renin-Angiotensin-Aldosterone System (RAAS), increasing sodium reabsorption. 2. Severe hypochloremia reduces the availability of chloride ions in the filtrate, which usually co-transport with sodium. 3. To maintain electroneutrality while reabsorbing sodium under aldosterone's influence, the distal tubule must secrete cations. Since potassium is often depleted (hypokalemia), the kidney preferentially secretes Hydrogen ions (H+) instead, leading to acidic urine despite systemic alkalosis."
+    },
+    {
+        "question": "Describe the three-neuron sympathetic pathway innervating the eye and explain how the pharmacological application of dilute phenylephrine can clinically differentiate between a post-ganglionic lesion and a pre-ganglionic lesion in a patient with Horner's syndrome.",
+        "reference_answer": "1. Pathway: 1st order (Hypothalamus to T1-T3 spinal cord), 2nd order (T1-T3 to Cranial Cervical Ganglion via vagosympathetic trunk), 3rd order (Cranial Cervical Ganglion to the eye). 2. Differentiation: In a post-ganglionic lesion (3rd order), denervation hypersensitivity occurs. Applying dilute phenylephrine causes rapid pupillary dilation (mydriasis) within 20 minutes because the postsynaptic receptors are upregulated. In pre-ganglionic lesions (1st/2nd order), the receptor density is normal, so dilute phenylephrine produces minimal or no dilation."
+    },
+    {
+        "question": "Explain the concept of the 'Window of Susceptibility' (Immunity Gap) in the context of canine core vaccination. Why does the decline of Maternally Derived Antibodies (MDA) create a specific period where a puppy is vulnerable to wild-type infection despite being vaccinated?",
+        "reference_answer": "The Window of Susceptibility occurs when Maternally Derived Antibody (MDA) titers decline to a level that is too low to protect against field infection (wild-type virus) but still high enough to neutralize and block the vaccine virus. During this gap (typically occurring between 8-12 weeks), the vaccine fails to immunize because MDAs bind the antigen before the puppy's own immune system can recognize it, yet the puppy is fully susceptible to pathogenic challenge."
+    },
+    {
+        "question": "Elucidate the mechanism of Tubuloglomerular Feedback (TGF). Specifically, detail how the macula densa cells detect changes in tubular flow and the subsequent paracrine signaling events that alter afferent arteriolar resistance to stabilize the Glomerular Filtration Rate (GFR).",
+        "reference_answer": "1. Detection: Macula densa cells in the distal tubule detect increased NaCl delivery (a proxy for high GFR) via the NKCC2 transporter. 2. Signaling: Increased intracellular Na+ leads to the release of ATP and Adenosine into the juxtaglomerular interstitium. 3. Effect: Adenosine binds to A1 receptors on the afferent arteriole smooth muscle, triggering vasoconstriction. This increases resistance, lowers glomerular hydrostatic pressure, and reduces GFR back to normal levels."
+    },
+    {
+        "question": "Define the concept of 'Refugia' in the management of gastrointestinal nematodes in small ruminants. Explain how maintaining a population of untreated parasites acts as a genetic diluent to slow the development of anthelmintic resistance.",
+        "reference_answer": "Refugia refers to the proportion of the parasite population that is not exposed to an anthelmintic drug (e.g., worms in untreated animals or free-living larvae on pasture). These unselected parasites carry susceptible genes. When they mate with the few resistant survivors from treated animals, the resulting offspring are largely heterozygous (susceptible), thereby diluting the frequency of resistance alleles in the gene pool and prolonging the efficacy of the drug."
+    },
+    {
+        "question": "Compare and contrast the role of myofibroblasts in the proliferative versus maturation phases of wound healing. How does their activity contribute to the phenomenon of 'wound contraction' seen specifically in healing by second intention?",
+        "reference_answer": "Myofibroblasts, differentiated from fibroblasts under TGF-beta influence, express alpha-smooth muscle actin. In the proliferative phase, they anchor to the wound edges and the extracellular matrix. Their primary function in healing by second intention is wound contraction, where they physically pull the wound margins toward the center to reduce the defect size. In the maturation phase, myofibroblasts typically undergo apoptosis; persistence of these cells can lead to pathological scarring or contracture."
+    },
+    {
+        "question": "Differentiate between 'Antigenic Drift' and 'Antigenic Shift' in the evolution of Influenza A viruses. Which mechanism is primarily responsible for the emergence of novel pandemic strains capable of crossing the species barrier, and why?",
+        "reference_answer": "Antigenic Drift involves gradual, accumulating point mutations in HA/NA genes, leading to seasonal epidemics. Antigenic Shift is the abrupt reassortment of RNA genome segments between two different influenza virus strains co-infecting a single host cell. Antigenic Shift is primarily responsible for pandemics because it creates a novel virus with a new hemagglutinin subtype to which the human population has little to no pre-existing immunity, facilitating rapid spread."
+    },
+    {
+        "question": "Discuss the mechanism by which alpha-2 adrenergic agonists (e.g., dexmedetomidine) produce a 'MAC-sparing' effect during inhalant anesthesia. Specifically, identify the primary site of action in the central nervous system and the neurotransmitter modulation involved.",
+        "reference_answer": "Alpha-2 agonists produce a MAC-sparing effect by binding to pre-synaptic alpha-2 adrenergic receptors, primarily in the Locus Coeruleus of the brainstem and the dorsal horn of the spinal cord. This binding inhibits the release of norepinephrine (a key excitatory neurotransmitter for arousal and nociception) via negative feedback, thereby causing sedation and analgesia, which reduces the requirement for inhalant anesthetic agents."
+    }
+]

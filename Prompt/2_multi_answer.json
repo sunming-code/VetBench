@@ -1,0 +1,11 @@
+{
+    "task_name": "QA-2: Multiple Answer",
+    "prompts": {
+        "inference": {
+            "system_message": "You are an expert in the field of veterinary medicine.\n\nThis is a multiple-choice question with multiple correct answers regarding animal health. As an expert, you should answer according to the following rules:\n1. Multiple-choice questions require you to select ALL correct options from the given choices.\n2. If there are multiple correct options, please combine them directly (e.g., ABC) or separate them with commas.\n3. Your final answer must strictly follow the format: \"Correct answer: [Option Letters]\".",
+            "cot_trigger": "Think like a clinical veterinarian and explain your reasoning step-by-step before giving the final answer.",
+            "few_shot_setup": "[Insert k-shot Examples Here]",
+            "current_input": "Question: {current_question}\nOptions:\n{options}\nCorrect answer:"
+        }
+    }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "question": "In Collies and other herding breeds, a deletion mutation in the ABCB1 gene (formerly MDR1) results in a non-functional P-glycoprotein transporter at the blood-brain barrier. Which of the following antiparasitic drugs is most likely to cause severe neurotoxicity in these homozygous mutant dogs due to accumulation in the central nervous system?",
+    "options": {
+      "A": "Ivermectin",
+      "B": "Pyrantel Pamoate",
+      "C": "Fenbendazole",
+      "D": "Praziquantel"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Nutritional myodegeneration, historically known as 'White Muscle Disease' in lambs and calves, is characteristically associated with an oxidative injury to skeletal and cardiac muscle fibers caused by a dietary deficiency in which synergistic micronutrient pair?",
+    "options": {
+      "A": "Copper and Molybdenum",
+      "B": "Calcium and Phosphorus",
+      "C": "Selenium and Vitamin E",
+      "D": "Magnesium and Potassium"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "To eradicate Bovine Herpesvirus 1 (BHV-1) from a herd while continuing vaccination, 'DIVA' (Differentiating Infected from Vaccinated Animals) vaccines are employed. These marker vaccines typically contain a deletion of the gene encoding which viral glycoprotein, allowing serological differentiation?",
+    "options": {
+      "A": "Glycoprotein B (gB)",
+      "B": "Glycoprotein D (gD)",
+      "C": "Glycoprotein C (gC)",
+      "D": "Glycoprotein E (gE)"
+    },
+    "answer": "D"
+  },
+  {
+    "question": "Dipylidium caninum, the common tapeworm of dogs and cats, requires an intermediate host to complete its life cycle. Infection of the definitive host occurs specifically through the ingestion of which cysticercoid-carrying ectoparasite?",
+    "options": {
+      "A": "Ixodes tick (Deer tick)",
+      "B": "Ctenocephalides felis (Flea)",
+      "C": "Otodectes cynotis (Ear mite)",
+      "D": "Anopheles mosquito"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "A 5-year-old female Standard Poodle presents with lethargy, bradycardia, and hypovolemic shock. Serum chemistry reveals hyponatremia, hyperkalemia, and a Na:K ratio of <23. Which endocrine disorder is the most probable differential diagnosis based on this electrolyte profile?",
+    "options": {
+      "A": "Primary Hyperparathyroidism",
+      "B": "Diabetes Mellitus (DKA)",
+      "C": "Hypoadrenocorticism (Addison's Disease)",
+      "D": "Hyperthyroidism"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "During an incisional gastropexy to prevent the recurrence of Gastric Dilatation-Volvulus (GDV), the seromuscular layer of the gastric antrum is typically sutured to the fascia of which specific abdominal wall muscle?",
+    "options": {
+      "A": "Transversus abdominis",
+      "B": "Rectus abdominis",
+      "C": "External abdominal oblique",
+      "D": "Latissimus dorsi"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "In bovine obstetrics, which specific fetal disposition constitutes a 'True Breech' presentation, often requiring a mutation or fetotomy for delivery?",
+    "options": {
+      "A": "Anterior presentation, dorsal position, carpal flexion",
+      "B": "Posterior presentation, dorsal position, bilateral hip flexion",
+      "C": "Posterior presentation, ventral position, extended hindlimbs",
+      "D": "Transverse presentation, dorsal position, cephalo-iliac"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Why is a field necropsy strictly contraindicated for a carcass suspected of death from Anthrax (Bacillus anthracis)?",
+    "options": {
+      "A": "The bacteria are anaerobic and will die immediately upon exposure to oxygen, preventing culture.",
+      "B": "The rigor mortis sets in too rapidly to allow for proper tissue sampling.",
+      "C": "It increases the risk of aerosolizing the virus to nearby livestock herds.",
+      "D": "Exposure of vegetative bacteria to atmospheric oxygen triggers sporulation, creating long-lasting environmental contamination."
+    },
+    "answer": "D"
+  }
+]
