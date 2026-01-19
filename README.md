@@ -1,23 +1,43 @@
-VetBench: A Comprehensive Benchmark for Veterinary Large Language Models<div align="center"></div>📖 IntroductionVetBench is the first comprehensive, multi-task benchmark designed to evaluate Large Language Models (LLMs) in the domain of veterinary medicine under the "One Health" framework1.Unlike previous benchmarks that rely solely on multiple-choice questions, VetBench systematically covers the three core pillars of Basic, Preventive, and Clinical Veterinary Medicine. It comprises 3,036 high-quality questions across 10 sub-disciplines and 11 task types, generated via a "Hybrid Construction Pipeline" involving rigorous expert validation222.<div align="center"><img src="assets/taxonomy.png" width="80%" alt="VetBench Taxonomy"><em>Figure 1: The Taxonomy of VetBench covering 10 expert-curated subcategories3.</em></div>⚡ News[2026-01]: 🚀 VetBench paper is released on arXiv.[2026-01]: 📂 The full dataset, expert-verified source texts, and evaluation prompts are open-sourced.🏆 LeaderboardWe evaluated mainstream proprietary, open-source, and domain-specific models. Below is the performance overview (Sorted by Average Score)4.RankModelTypeSizeAverageBasic (QA1)Clinical Reasoning (RC1-RC4)🥇Claude 4.5 OpusProprietary-87.2096.5898.86🥈Gemini 3.0 ProProprietary-86.6898.5597.79🥉GPT-5.2Proprietary-86.3496.3397.394GLM 4.7Open-Source358B85.2094.2096.485DeepSeek-v3.2Open-Source685B84.7097.1097.83-BioGPT-LargeDomain1.5B42.4220.2969.99Insight: Our results reveal a "Specialization Paradox" where generalist models significantly outperform existing biology-focused models (e.g., BioGPT)5.📂 Dataset StructureVetBench is organized into four primary directories. Below is the detailed structure and description of each component.1. problem_bank/ (The Core Dataset)This folder contains the 3,036 evaluation questions6, categorized by the three pillars of veterinary medicine:basic_vet/: Covers Anatomy, Histology, Physiology, Biochemistry, Pathology, and Pharmacology7.preventive/: Covers Microbiology, Immunology, Parasitology, and Public Health (One Health)8.clinical/: Covers Internal Medicine, Surgery, and Obstetrics & Andrology9.File Format: Each file is a JSON/JSONL containing the question, options (if applicable), ground truth, and reference info.2. text/ (Source Material)This folder contains the 276 Core Passages used to generate the benchmark10.core_passages.json: These texts were extracted from 80k+ papers and books using our "Cascading Data Cleaning Pipeline" (Layout-Aware Parsing -> RefinedWeb Filtering -> Semantic Deduplication -> E5 Clustering)11.Significance: These passages serve as the "Reference Document" for Reading Comprehension tasks (RC1-RC5).3. prompt/ (Evaluation Prompts)We provide the exact prompts used for inference and evaluation to ensure reproducibility12.inference/: Prompts used to query the models (e.g., "Think like a clinical veterinarian..."). Includes instructions for both Direct Answer and Chain-of-Thought (CoT)13.judge/: The standardized prompts for the LLM-as-a-Judge (GPT-5.2), used to score open-ended generation tasks (QA-4, SUM-1, etc.). Based on our meta-evaluation, GPT-5.2 achieved the lowest MSE (4.01) against human experts14.4. few_shot/ (In-Context Learning)This folder contains the demonstration examples used for few-shot experiments15.shots.json: Organized by k shots (k={0, 1, 3, 5, 8}).Purpose: These examples are expert-written questions designed to guide the model's output format and reasoning logic16. Our experiments show that performance generally saturates after 5-shot17.📊 Task TaxonomyVetBench is not just Multiple Choice questions. It includes 11 distinct task types18:Task IDTask NameMetricQA-1/RC-1Single ChoiceAccuracyQA-2/RC-2Multiple ChoiceMacro-F1QA-3/RC-3Fill-in-the-BlankReference-based JudgeQA-4/RC-4Open-ended GenerationRubric-based JudgeSUM-1/2Summarization/ExtractionBERTScoreRC-5Subcategory ClassificationAccuracy📉 Key AnalysisCost-Benefit AnalysisWe conducted a comprehensive analysis of the trade-off between diagnostic accuracy and inference cost. DeepSeek-v3.2 occupies the "Extreme Cost-Efficiency" zone on the Pareto Frontier19191919.<div align="center"><img src="assets/cost_benefit.png" width="60%" alt="Cost Benefit Analysis"></div>Error Analysis: Anthropocentric BiasA critical finding is the "Anthropocentric Bias", where models incorrectly transfer human anatomical knowledge to animals (e.g., assuming a dog's omentum fuses like a human's)20202020.🚀 UsageInstallationBashgit clone https://github.com/YourOrg/VetBench.git
-cd VetBench
-pip install -r requirements.txt
-Run EvaluationWe recommend using EvalScope 21 for standardized testing.Python# Example pseudo-code for loading data and prompts
-import json
+# VetBench: A Comprehensive Benchmark for Veterinary Large Language Models
 
-# 1. Load a clinical reasoning question
-with open('./problem_bank/clinical/internal_medicine.json') as f:
-    dataset = json.load(f)
+<div align="center">
 
-# 2. Load the standardized prompt
-with open('./prompt/inference/cot_prompt.json') as f:
-    prompt_template = json.load(f)
+![VetBench Taxonomy](assets/taxonomy_fig.png) [![Paper](https://img.shields.io/badge/Paper-ArXiv-red)](https://arxiv.org/abs/placeholder) [![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](LICENSE)
+[![Data](https://img.shields.io/badge/Data-HuggingFace-yellow)](https://huggingface.co/datasets/placeholder)
 
-# 3. Run inference (Insert your model generation code here)
-# ...
-🖊️ CitationIf you find VetBench useful, please cite our paper:代码段@article{vetbench2026,
-  title={VetBench: A Comprehensive Benchmark for Veterinary Large Language Models},
-  author={Author List...},
-  journal={arXiv preprint arXiv:2501.xxxxx},
-  year={2026}
-}
-📄 LicenseThis dataset is licensed under the CC BY 4.0 License.🙏 AcknowledgementsWe acknowledge the support from the Red Bird MPhil Program at HKUST(GZ)22.
+</div>
+
+## 📖 Introduction
+
+[cite_start]**VetBench** is the first comprehensive, multi-task benchmark designed to evaluate Large Language Models (LLMs) within the **"One Health"** framework of veterinary medicine[cite: 3, 12].
+
+While LLMs show transformative potential in healthcare, their application in veterinary medicine is hindered by a lack of rigorous evaluation standards. [cite_start]VetBench addresses this gap by covering **3 core pillars** (Basic, Preventive, and Clinical Veterinary Medicine) across **10 sub-disciplines**[cite: 4, 33].
+
+### Key Features
+* [cite_start]**Full-Spectrum Coverage:** 3,036 high-quality questions derived from 276 expert-curated core passages[cite: 4, 53].
+* [cite_start]**Hybrid Construction Pipeline:** Combines automated generation with rigorous expert validation (Human-in-the-loop)[cite: 43].
+* [cite_start]**Multi-Task Evaluation:** Includes 11 distinct task types ranging from basic knowledge retrieval (QA) to complex clinical reasoning (Case Analysis)[cite: 15].
+* [cite_start]**Rigorous Metrics:** Utilizes a "Meta-Evaluation" validated Judge Model (GPT-5.2) and specific metrics (Accuracy, Macro-F1, BERTScore) for different task paradigms[cite: 70, 71].
+
+
+
+## 📂 Repository Structure
+
+This repository contains the dataset, prompt templates, and evaluation scripts used in the VetBench paper.
+
+```text
+.
+├── data/
+│   ├── core_passages.json       # 276 High-quality veterinary text segments [cite: 53]
+│   ├── questions/               # 3,036 Generated questions divided by task ID [cite: 61]
+│   │   ├── qa1_single_choice.json
+│   │   ├── qa2_multiple_choice.json
+│   │   ├── ...
+│   │   └── rc5_classification.json
+│   └── few_shot_examples.json   # Expert-verified k-shot examples for ICL [cite: 56]
+├── prompts/                     # Optimized System & User Prompts (JSON format)
+│   ├── qa1_prompt.json
+│   ├── qa3_prompt.json          # Includes Judge instructions
+│   └── ...
+├── scripts/                     # Evaluation scripts based on EvalScope 
+└── README.md
