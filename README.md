@@ -61,12 +61,16 @@ The benchmark includes 11 Task Types designed to probe different cognitive capab
 
 | ID | Task Type | Metric | Count |
 |----|-----------|--------|-------|
-| QA-1 | Single Choice | Accuracy | 276 |
+| QA-1 | Multiple Choice | Accuracy | 276 |
 | QA-2 | Multiple Answer | Macro-F1 | 276 |
 | QA-3 | Fill-in-the-Blank | LLM Judge (A/B/C) | 276 |
 | QA-4 | Open-ended Generation | Rubric-based Score | 276 |
-| SUM | Summarization & Extraction | BERTScore | 552 |
-| RC | Reading Comprehension | Weighted Avg | 1380 |
+| SUM-1 | Summarization | BERTScore | 276 |
+| SUM-1 | Extraction | BERTScore | 276 |
+| RC-1 | Multiple Choice | Accuracy | 276 |
+| RC-2 | Multiple Answer | Macro-F1 | 276 |
+| RC-3 | Fill-in-the-Blank | LLM Judge (A/B/C) | 276 |
+| RC-4 | Open-ended Generation | Rubric-based Score | 276 |
 
 ## 🚀 Getting Started
 
@@ -117,7 +121,6 @@ Below is a summary of model performance from our paper:
 | Gemini 3.0 Pro | Proprietary | 86.68 | Medium |
 | GLM 4.7 | Open-Source | 85.20 | High |
 | DeepSeek-v3.2 | Open-Source | 84.70 | Extreme |
-| BioGPT-Large | Domain-Specific | 42.42 | - |
 
 > **Note:** Our results reveal a "Specialization Paradox" where generalist models significantly outperform existing biology-focused models.
 
@@ -140,7 +143,7 @@ If you find VetBench useful for your research, please cite our paper:
 
 ## 🙏 Acknowledgements
 
-This work is supported by the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou). We thank the veterinary experts who contributed to the data validation process.
+I would like to express my deepest gratitude to the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou) for providing me with generous support, resources, and funding, which have been instrumental in the successful completion of my research.
 
 
 
