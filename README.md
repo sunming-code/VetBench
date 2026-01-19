@@ -47,7 +47,7 @@ This repository contains the dataset, prompt templates, and evaluation scripts u
 │   ├── ...
 │   └── 7_classify.json
 └── README.md
-
+```
 ## 📊 Dataset & Taxonomy
 
 VetBench is structured into three primary categories and further divided into 10 sub-disciplines:
@@ -142,6 +142,7 @@ If you find VetBench useful for your research, please cite our paper:
 ## 🙏 Acknowledgements
 
 This work is supported by the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou). We thank the veterinary experts who contributed to the data validation process.
+
 
 
 
