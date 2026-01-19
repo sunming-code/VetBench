@@ -10,7 +10,6 @@
 </div>
 
 ## 📖 Introduction
-...
 
 **VetBench** is the first comprehensive, multi-task benchmark designed to evaluate Large Language Models (LLMs) within the **"One Health"** framework of veterinary medicine.
 
@@ -143,6 +142,7 @@ If you find VetBench useful for your research, please cite our paper:
 ## 🙏 Acknowledgements
 
 This work is supported by the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou). We thank the veterinary experts who contributed to the data validation process.
+
 
 
 
