@@ -30,19 +30,23 @@ This repository contains the dataset, prompt templates, and evaluation scripts u
 
 ```text
 .
-├── data/
+├── text/
 │   ├── core_passages.json       # 276 High-quality veterinary text segments 
-│   ├── questions/               # 3,036 Generated questions divided by task ID 
-│   │   ├── qa1_single_choice.json
-│   │   ├── qa2_multiple_choice.json
-│   │   ├── ...
-│   │   └── rc5_classification.json
-│   └── few_shot_examples.json   # Expert-verified k-shot examples for ICL 
+├── problem_bank/                # 3,036 Generated questions divided by task type 
+│   ├── QA1_multi_choice.json
+│   ├── QA2_multi_answer.json
+│   ├── ...
+│   └── RC5_classify.json
+├── few_shot                     # Expert-verified k-shot examples
+│   ├── 1_multi_choice.json
+│   ├── 2_multi_answer.json
+│   ├── ...
+│   └── 7_classify.json
 ├── prompts/                     # Optimized System & User Prompts (JSON format)
-│   ├── qa1_prompt.json
-│   ├── qa3_prompt.json          # Includes Judge instructions
-│   └── ...
-├── scripts/                     # Evaluation scripts based on EvalScope 
+│   ├── 1_multi_choice.json
+│   ├── 2_multi_answer.json
+│   ├── ...
+│   └── 7_classify.json
 └── README.md
 
 ## 📊 Dataset & Taxonomy
@@ -139,6 +143,7 @@ If you find VetBench useful for your research, please cite our paper:
 ## 🙏 Acknowledgements
 
 This work is supported by the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou). We thank the veterinary experts who contributed to the data validation process.
+
 
 
 
