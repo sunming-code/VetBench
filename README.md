@@ -41,27 +41,3 @@ This repository contains the dataset, prompt templates, and evaluation scripts u
 │   └── ...
 ├── scripts/                     # Evaluation scripts based on EvalScope 
 └── README.md
-
-📊 Dataset & TaxonomyVetBench is structured into three primary categories and further divided into 10 sub-disciplines1:CategorySub-disciplinesBasic Vet MedAnatomy & Histology, Physiology & Biochemistry, Pathology, PharmacologyPreventive Vet MedMicrobiology & Immunology, Parasitology, Public HealthClinical Vet MedInternal Medicine, Surgery, Obstetrics & AndrologyThe benchmark includes 11 Task Types designed to probe different cognitive capabilities:IDTask TypeMetricCountQA-1Single ChoiceAccuracy276QA-2Multiple AnswerMacro-F1276QA-3Fill-in-the-BlankLLM Judge (A/B/C)276QA-4Open-ended GenerationRubric-based Score276SUMSummarization & ExtractionBERTScore552RCReading ComprehensionWeighted Avg1380🚀 Getting Started1. InstallationBashgit clone [https://github.com/your-username/VetBench.git](https://github.com/your-username/VetBench.git)
-cd VetBench
-pip install -r requirements.txt
-2. Prompt FormatWe utilize a Global System Message strategy to enforce role-play and formatting constraints. For tasks requiring reasoning (e.g., QA-2, QA-4), we implement a configurable CoT (Chain-of-Thought) Switch.Example Configuration (prompts/qa2_multiple_choice.json):JSON{
-  "inference": {
-    "system_message": "You are an expert in the field of veterinary medicine... Select ALL correct options...",
-    "cot_trigger": "Think like a clinical veterinarian and explain your reasoning step-by-step...",
-    "current_input": "Question: {question}\nOptions: {options}\nCorrect answer:"
-  }
-}
-3. Running EvaluationWe recommend using EvalScope for standardized assessment2.Bash# Example: Evaluate a model on QA-1 tasks
-python scripts/eval_vetbench.py \
-    --model_name_or_path "deepseek-ai/deepseek-v3" \
-    --task "qa1" \
-    --shot 5 \
-    --use_cot True
-🏆 Leaderboard (Selected)Below is a summary of model performance from our paper3.ModelTypeAverage ScoreCost EfficiencyClaude 4.5 OpusProprietary87.20LowGemini 3.0 ProProprietary86.68MediumGLM 4.7Open-Source85.20HighDeepSeek-v3.2Open-Source84.70ExtremeBioGPT-LargeDomain-Specific42.42-Note: Our results reveal a "Specialization Paradox" where generalist models significantly outperform existing biology-focused models4.⚖️ LicenseThis dataset is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).✍️ CitationIf you find VetBench useful for your research, please cite our paper:代码段@article{vetbench2025,
-  title={VetBench: A Comprehensive Benchmark for Veterinary Large Language Models},
-  author={Your Name and Co-authors},
-  journal={ArXiv preprint},
-  year={2025}
-}
-🙏 AcknowledgementsThis work is supported by the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou)5. We thank the veterinary experts who contributed to the data validation process.
