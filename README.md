@@ -135,8 +135,8 @@ If you find VetBench useful for your research, please cite our paper:
 
 ```bibtex
 @article{vetbench2025,
-  title={VetBench: A Comprehensive Benchmark for Veterinary Large Language Models},
-  author={Ming SUN},
+  title={VetBench: A Comprehensive Benchmark for Evaluating Large Language Models in Veterinary Medicine},
+  author={Ming SUN, Yin WANG, Xuanrong WANG, Jiaqi WANG, Qi ZHANG, Yanlin ZHANG},
   journal={ArXiv preprint},
   year={2025}
 }
@@ -145,6 +145,7 @@ If you find VetBench useful for your research, please cite our paper:
 ## 🙏 Acknowledgements
 
 I would like to express my deepest gratitude to the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou) for providing me with generous support, resources, and funding, which have been instrumental in the successful completion of my research.
+
 
 
 
