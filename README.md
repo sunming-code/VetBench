@@ -71,13 +71,14 @@ The benchmark includes 11 Task Types designed to probe different cognitive capab
 | RC-2 | Multiple Answer | Macro-F1 | 276 |
 | RC-3 | Fill-in-the-Blank | LLM Judge (A/B/C) | 276 |
 | RC-4 | Open-ended Generation | Rubric-based Score | 276 |
+| RC-4 | Classification | Accuracy | 276 |
 
 ## 🚀 Getting Started
 
 ### 1. Installation
 
 ```bash
-git clone https://github.com/your-username/VetBench.git
+git clone https://github.com/sunming-code/VetBench.git
 cd VetBench
 pip install -r requirements.txt
 ```
@@ -144,6 +145,7 @@ If you find VetBench useful for your research, please cite our paper:
 ## 🙏 Acknowledgements
 
 I would like to express my deepest gratitude to the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou) for providing me with generous support, resources, and funding, which have been instrumental in the successful completion of my research.
+
 
 
 
