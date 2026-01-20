@@ -17,7 +17,7 @@ While LLMs show transformative potential in healthcare, their application in vet
 ### Key Features
 * **Full-Spectrum Coverage:** 3,036 high-quality questions derived from 276 expert-curated core passages.
 * **Hybrid Construction Pipeline:** Combines automated generation with rigorous expert validation (Human-in-the-loop).
-* **Multi-Task Evaluation:** Includes 11 distinct task types ranging from basic knowledge retrieval (QA) to complex clinical reasoning (Case Analysis).
+* **Multi-Task Evaluation:** Includes 11 distinct task types ranging from basic knowledge retrieval (QA) to complex reasoning (Case Analysis).
 * **Rigorous Metrics:** Utilizes a "Meta-Evaluation" validated Judge Model (GPT-5.2) and specific metrics (Accuracy, Macro-F1, BERTScore) for different task paradigms.
 
 
@@ -71,50 +71,12 @@ The benchmark includes 11 Task Types designed to probe different cognitive capab
 | RC-2 | Multiple Answer | Macro-F1 | 276 |
 | RC-3 | Fill-in-the-Blank | LLM Judge (A/B/C) | 276 |
 | RC-4 | Open-ended Generation | Rubric-based Score | 276 |
-| RC-4 | Classification | Accuracy | 276 |
+| RC-5 | Classification | Accuracy | 276 |
 
-## 🚀 Getting Started
 
-### 1. Installation
+## 🏆 Leaderboard
 
-```bash
-git clone https://github.com/sunming-code/VetBench.git
-cd VetBench
-pip install -r requirements.txt
-```
-
-### 2. Prompt Format
-
-We utilize a Global System Message strategy to enforce role-play and formatting constraints. For tasks requiring reasoning (e.g., QA-2, QA-4), we implement a configurable CoT (Chain-of-Thought) Switch.
-
-**Example Configuration** (`prompts/qa2_multiple_choice.json`):
-
-```json
-{
-  "inference": {
-    "system_message": "You are an expert in the field of veterinary medicine... Select ALL correct options...",
-    "cot_trigger": "Think like a clinical veterinarian and explain your reasoning step-by-step...",
-    "current_input": "Question: {question}\nOptions: {options}\nCorrect answer:"
-  }
-}
-```
-
-### 3. Running Evaluation
-
-We recommend using EvalScope for standardized assessment.
-
-```bash
-# Example: Evaluate a model on QA-1 tasks
-python scripts/eval_vetbench.py \
-    --model_name_or_path "deepseek-ai/deepseek-v3" \
-    --task "qa1" \
-    --shot 5 \
-    --use_cot True
-```
-
-## 🏆 Leaderboard (Selected)
-
-Below is a summary of model performance from our paper:
+Below is a simple summary of model performance from our paper:
 
 | Model | Type | Average Score | Cost Efficiency |
 |-------|------|---------------|-----------------|
@@ -122,8 +84,6 @@ Below is a summary of model performance from our paper:
 | Gemini 3.0 Pro | Proprietary | 86.68 | Medium |
 | GLM 4.7 | Open-Source | 85.20 | High |
 | DeepSeek-v3.2 | Open-Source | 84.70 | Extreme |
-
-> **Note:** Our results reveal a "Specialization Paradox" where generalist models significantly outperform existing biology-focused models.
 
 ## ⚖️ License
 
@@ -145,6 +105,7 @@ If you find VetBench useful for your research, please cite our paper:
 ## 🙏 Acknowledgements
 
 I would like to express my deepest gratitude to the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou) for providing me with generous support, resources, and funding, which have been instrumental in the successful completion of my research.
+
 
 
 
