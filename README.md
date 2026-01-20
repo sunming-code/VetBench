@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>VetBench: A Comprehensive Benchmark for Veterinary Large Language Models</h1>
+<h1>VetBench: A Comprehensive Benchmark for Evaluating Large Language Models in Veterinary Medicine</h1>
 
 
 [![Paper](https://img.shields.io/badge/Paper-ArXiv-red)](https://arxiv.org/abs/placeholder)
@@ -105,6 +105,7 @@ If you find VetBench useful for your research, please cite our paper:
 ## 🙏 Acknowledgements
 
 I would like to express my deepest gratitude to the Red Bird MPhil Program at the Hong Kong University of Science and Technology (Guangzhou) for providing me with generous support, resources, and funding, which have been instrumental in the successful completion of my research.
+
 
 
 
