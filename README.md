@@ -2,8 +2,6 @@
 
 <h1>VetBench: A Comprehensive Benchmark for Evaluating Large Language Models in Veterinary Medicine</h1>
 
-
-[![Paper](https://img.shields.io/badge/Paper-ArXiv-red)](https://arxiv.org/abs/placeholder)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](License)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE-APACHE-2.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE-MIT)
