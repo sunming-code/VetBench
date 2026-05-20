@@ -4,7 +4,9 @@
 
 
 [![Paper](https://img.shields.io/badge/Paper-ArXiv-red)](https://arxiv.org/abs/placeholder)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](License)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE-APACHE-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE-MIT)
 ![VetBench Framework](asset/workflow.png)
 </div>
 
@@ -87,4 +89,6 @@ Below is a simple summary of model performance from our paper:
 
 ## ⚖️ License
 
-This dataset is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE).
+Unless otherwise noted, the dataset and benchmark materials are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](License).
+
+Software/code materials are available under the [Apache License 2.0](LICENSE-APACHE-2.0) and the [MIT License](LICENSE-MIT).
