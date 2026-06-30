@@ -30,11 +30,18 @@ This repository contains the dataset, prompt templates, and evaluation scripts u
 .
 ├── text/
 │   ├── core_passages.json       # 276 High-quality veterinary text segments 
-├── problem_bank/                # 3,036 Generated questions divided by task type 
-│   ├── QA1_multi_choice.json
-│   ├── QA2_multi_answer.json
-│   ├── ...
-│   └── RC5_classify.json
+├── problem_bank/                # 3,036 Generated questions across 11 JSONL task files
+│   ├── QA1.jsonl
+│   ├── QA2.jsonl
+│   ├── QA3.jsonl
+│   ├── QA4.jsonl
+│   ├── SUM1.jsonl
+│   ├── SUM2.jsonl
+│   ├── RC1.jsonl
+│   ├── RC2.jsonl
+│   ├── RC3.jsonl
+│   ├── RC4.jsonl
+│   └── RC5.jsonl
 ├── few_shot                     # Expert-verified k-shot examples
 │   ├── 1_multi_choice.json
 │   ├── 2_multi_answer.json
@@ -66,7 +73,7 @@ The benchmark includes 11 Task Types designed to probe different cognitive capab
 | QA-3 | Fill-in-the-Blank | LLM Judge (A/B/C) | 276 |
 | QA-4 | Open-ended Generation | Rubric-based Score | 276 |
 | SUM-1 | Summarization | BERTScore | 276 |
-| SUM-1 | Extraction | BERTScore | 276 |
+| SUM-2 | Extraction | BERTScore | 276 |
 | RC-1 | Multiple Choice | Accuracy | 276 |
 | RC-2 | Multiple Answer | Macro-F1 | 276 |
 | RC-3 | Fill-in-the-Blank | LLM Judge (A/B/C) | 276 |
