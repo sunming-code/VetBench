@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>VetBench: A Comprehensive Benchmark for Evaluating Large Language Models in Veterinary Medicine</h1>
+<h1>VetBench: A Benchmark for Evaluating Large Language Models in Veterinary Medicine</h1>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](License)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE-APACHE-2.0)
@@ -15,7 +15,7 @@
 While LLMs show transformative potential in healthcare, their application in veterinary medicine is hindered by a lack of rigorous evaluation standards. VetBench addresses this gap by covering **3 core pillars** (Basic, Preventive, and Clinical Veterinary Medicine) across **10 sub-disciplines**.
 
 ### Key Features
-* **Full-Spectrum Coverage:** 3,036 high-quality questions derived from 1932 expert-curated core passages.
+* **Full-Spectrum Coverage:** 3,036 high-quality questions derived from 1,932 expert-curated core passages.
 * **Hybrid Construction Pipeline:** Combines automated generation with rigorous expert validation (Human-in-the-loop).
 * **Multi-Task Evaluation:** Includes 11 distinct task types ranging from basic knowledge retrieval (QA) to complex reasoning (Case Analysis).
 * **Rigorous Metrics:** Utilizes a "Meta-Evaluation" validated Judge Model (GPT-5.2) and specific metrics (Accuracy, Macro-F1, BERTScore) for different task paradigms.
@@ -29,7 +29,7 @@ This repository contains the dataset, prompt templates, and evaluation scripts u
 ```text
 .
 ├── text/
-│   ├── core_passages.json       # 1932 High-quality veterinary text segments 
+│   ├── core_passages.json       # 1,932 High-quality veterinary text segments 
 ├── problem_bank/                # 3,036 Generated questions across 11 JSONL task files
 │   ├── QA1.jsonl
 │   ├── QA2.jsonl
