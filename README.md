@@ -39,7 +39,7 @@ The benchmark distinguishes between passage-unsupported tasks (QA-1--QA-4), in w
 └── README.md
 ```
 
-The current GitHub snapshot is the benchmark asset release. It does not include the paper's private/custom EvalScope adapter, raw model predictions, judge outputs, or bootstrap-analysis scripts. Consequently, the commands below are useful for checking data loading and running inference, but they do not by themselves reproduce the paper's leaderboard.
+The current GitHub snapshot is the benchmark asset release. Its released `core_passages.txt` contains 276 line records, whereas the revised-paper leaderboard was computed over 1,932 passage-level units. The snapshot does not include the paper's private/custom EvalScope adapter, raw model predictions, judge outputs, or bootstrap-analysis scripts. Consequently, the commands below are useful for checking data loading and running inference, but they do not by themselves reproduce the paper's leaderboard.
 
 ## Task definitions and official metrics
 
