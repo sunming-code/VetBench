@@ -64,7 +64,7 @@ python -m pip install "evalscope>=1.3.0"
 
 ### Run QA-1 with an OpenAI-compatible API
 
-Run the command from the repository root. `API_URL` must be the complete chat-completions endpoint (for example, `http://127.0.0.1:8000/v1/chat/completions`), and `MODEL_ID` must be the model name accepted by that endpoint.
+Run the command from the repository root. `API_URL` must be the complete chat-completions endpoint, and `MODEL_ID` must be the model name accepted by that endpoint.
 
 ```bash
 evalscope eval \
@@ -83,15 +83,9 @@ evalscope eval \
 
 The predictions, per-item reviews, aggregate accuracy report, and resolved task configuration are written under the timestamped directory in `outputs/qa1`. To test the data pipeline without calling an API, omit `--model`, `--model-id`, `--eval-type`, `--api-url`, and `--api-key`, and add `--limit 1`; EvalScope then uses its mock model.
 
-### Scope of the public command
+## leaderboard
 
-Do not obtain paper scores for the other ten tasks by merely changing `QA1.jsonl` in the command. QA-2 and RC-2 require multi-label parsing and set-level F1; RC-1--RC-4 must inject `Contextual materials` or `context` into the prompt; RC-5 uses `primary answer`/`secondary answer`; and the generated-answer tasks require BERTScore or the paper's calibrated judge. EvalScope's built-in generic adapters do not implement those VetBench-specific transformations and metrics.
-
-## Verified leaderboard
-
-The table below replaces the four-row table that was previously in this README. Values were checked against the revised manuscript's main-results table (Table 2), not inferred from the JSONL answer keys.
-
-**Aggregation.** Scores are on a 0--100 scale. `RC1--4` is one aggregated passage-supported QA component, so the four closely related RC tasks are not given four times the weight. `Avg` is the weighted mean over the reported dimensions and three independent runs. The interval is a two-sided 95% passage-level cluster-bootstrap CI over the 1,932 source passages (10,000 replicates). The leaderboard is therefore not reproducible from the released JSONL files alone.
+**Aggregation.** Scores are on a 0--100 scale. `RC1--4` is one aggregated passage-supported QA component, so the four closely related RC tasks are not given four times the weight. `Avg` is the weighted mean over the reported dimensions and three independent runs. The interval is a two-sided 95% passage-level cluster-bootstrap CI over the 1,932 source passages (10,000 replicates).
 
 | Rank | Model | Group | Params | Avg | 95% CI |
 |---:|---|---|---:|---:|---:|
@@ -112,8 +106,6 @@ The table below replaces the four-row table that was previously in this README. 
 | 15 | Med42-v2 | Domain-specialized | 70B | 80.21 | 79.34--80.93 |
 | 16 | PMC-LLaMA | Domain-specialized | 13B | 56.73 | 56.00--57.42 |
 | 17 | BioGPT-Large | Domain-specialized | 1.5B | 42.40 | 41.57--43.11 |
-
-The model identifiers/access dates used in the revised evaluation are documented in the paper supplementary material. Model comparisons should be interpreted with the stated caveats: proprietary and open-source systems were accessed through different providers, domain-specialized checkpoints were locally deployed, and the benchmark measures controlled text tasks rather than clinical or operational readiness.
 
 ## Citation and license
 
