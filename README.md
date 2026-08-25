@@ -54,8 +54,6 @@ The benchmark distinguishes between passage-unsupported tasks (QA-1--QA-4), in w
 | RC-4 | Passage supported; open generation | Rubric-based LLM scorer | 276 |
 | RC-5 | Passage supported; sub-discipline classification | Accuracy | 276 |
 
-For QA-1/QA-2 and RC-1/RC-2, the correct option labels are stored in `answer`. For RC-5, the labels are stored in `primary answer` and (where applicable) `secondary answer`. Generation tasks use `query`/`response` or `query`/`answer`, depending on the task file; inspect the first JSONL record before writing a custom adapter.
-
 ## Running with EvalScope
 
 Install EvalScope (the commands were checked against EvalScope 1.3.0):
