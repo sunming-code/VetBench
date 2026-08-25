@@ -38,9 +38,6 @@ The benchmark distinguishes between passage-unsupported tasks (QA-1--QA-4), in w
 +-- few_shot/                    # Few-shot examples
 `-- README.md
 ```
-
-The current GitHub snapshot is the benchmark asset release. Its released `core_passages.txt` contains 276 line records, whereas the revised-paper leaderboard was computed over 1,932 passage-level units. The snapshot does not include the VetBench-specific EvalScope adapter, raw model predictions, judge outputs, or bootstrap-analysis scripts used for the paper. Consequently, the command below reproduces QA-1 loading, inference, and accuracy scoring, but the public snapshot cannot by itself reproduce the complete paper leaderboard.
-
 ## Task definitions and official metrics
 
 | Task | Input setting | Metric used for the paper | Items |
