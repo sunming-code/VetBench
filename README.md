@@ -107,6 +107,17 @@ The predictions, per-item reviews, aggregate accuracy report, and resolved task 
 | 16 | PMC-LLaMA | Domain-specialized | 13B | 56.73 | 56.00--57.42 |
 | 17 | BioGPT-Large | Domain-specialized | 1.5B | 42.40 | 41.57--43.11 |
 
-## Citation and license
+## License
 
-Please cite the VetBench paper when using the benchmark. The dataset and benchmark materials are available under [CC BY 4.0](License). Software/code materials are available under the [Apache License 2.0](LICENSE-APACHE-2.0) and [MIT License](LICENSE-MIT).
+The dataset and benchmark materials are available under [CC BY 4.0](License). Software/code materials are available under the [Apache License 2.0](LICENSE-APACHE-2.0) and [MIT License](LICENSE-MIT).
+
+## Citation
+
+```bibtex
+@misc{sun2026vetbench,
+  title  = {VetBench: A Benchmark for Evaluating Large Language Models in Veterinary Medicine},
+  author = {Sun, Ming and Wang, Yin and Wang, Xuanrong and Wang, Jiaqi and Zhang, Qi and Zhang, Yanlin},
+  year   = {2026},
+  url    = {https://github.com/sunming-code/VetBench}
+}
+```
